@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="toggle">Включить</button>
+    <br />
+    <img id="bulb" src="./bulb-off.png" />
+    <style>
+      #toggle {
+        background: #6215dd;
+        color: white;
+      }
+      #bulb {
+        width: 200px;
+      }
+    </style>
+    <script>
+      const bulbToggle = document.getElementById("toggle");
+      bulbToggle.addEventListener("click", () => {
+        const bulb = document.getElementById("bulb");
+        var status = bulbToggle.innerText
+        if (bulbToggle.innerText === "Выключить") {
+          bulbToggle.innerText = "Включить";
+          bulb.src = "./bulb-off.png";
+        } else {
+          bulbToggle.innerText = "Выключить";
+          bulb.src = "./bulb-on.png";
+        }
+      });
+    </script>
+  </body>
+</html>
