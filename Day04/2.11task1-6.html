@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      alert(null || 2 || undefined); // 2
+      alert(alert(1) || 2 || alert(3)); // сначала 1, затем 2
+      alert(1 && null && 2); // null
+      alert(alert(1) && alert(2)); // 1, underfind
+      alert(null || (2 && 3) || 4); // 3
+
+      let age = prompt("Введите число", 0);
+      if (age >= 14 && age <= 90) {
+        alert("В диапазоне");
+      }
+    </script>
+  </body>
+</html>

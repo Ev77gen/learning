@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let login, password, message;
+      login = prompt("Login", "");
+      if (login == null || login == "") {
+        message = "Cancel";
+        alert(message);
+      } else if (login == "Admin") {
+        password = prompt("Password", "");
+      } else {
+        message = "Unknown user";
+        alert(message);
+      }
+      if (password == null || password == "") {
+        message = "Cancel";
+        alert(message);
+      } else if (password == "I am the Boss") {
+        message = "Hello, Boss!";
+        alert(message);
+      } else {
+        message = "Invalid password";
+        alert(message);
+      }
+    </script>
+  </body>
+</html>

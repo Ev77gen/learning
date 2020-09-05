@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		let login, password, message;
+		login = prompt("Login", "");
+		message=(login == null || login == "")? "Cancel":
+		(login=="Admin")? password=prompt("Password",""):
+		"Unknown user"
+		alert(message);
+		message=(password == null || password == "")? "Cancel":
+		(password=="I am the Boss")? "Hello Boss": 
+		"Invalid password"
+		alert(message);
+	</script>
+</body>
+</html>
