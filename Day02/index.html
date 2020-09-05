@@ -6,13 +6,18 @@
     <title>Document</title>
   </head>
   <body>
-    <button id="toggle">Включить</button>
-    <br />
+    <div>
     <img id="bulb" src="./bulb-off.png" />
+    <br>
+    <button id="toggle">Включить</button>
+  </div>
     <style>
       #toggle {
         background: #6215dd;
         color: white;
+        position: absolute;
+        top: 220px;
+        left: 65px;
       }
       #bulb {
         width: 200px;
@@ -22,7 +27,6 @@
       const bulbToggle = document.getElementById("toggle");
       bulbToggle.addEventListener("click", () => {
         const bulb = document.getElementById("bulb");
-        var status = bulbToggle.innerText
         if (bulbToggle.innerText === "Выключить") {
           bulbToggle.innerText = "Включить";
           bulb.src = "./bulb-off.png";
@@ -32,5 +36,33 @@
         }
       });
     </script>
+    <br>
+    <div>
+      <img id="bulb-on" src="./bulb-on.png"></img>
+      <input id="dimmer" type="range" min="0" max="1" value="0" step=".01" />
+    </div>
+      <br>
+      <style>
+        #bulb-on {
+          width: 200px;
+          opacity: 0;
+          position: absolute;
+          left: 250px;
+          top: 8px;
+        }
+        #dimmer {
+          width: 200px;
+          position: absolute;
+          top: 220px;
+          left: 247px;
+        }
+      </style>
+      <script>
+        const dimmer=document.getElementById("dimmer");
+        const bulb=document.getElementById("bulb-on");
+        dimmer.addEventListener("input", () => {
+        bulb.style.opacity = dimmer.value;
+    })
+      </script>
   </body>
 </html>
