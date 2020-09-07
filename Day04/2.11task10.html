@@ -7,27 +7,23 @@
   </head>
   <body>
     <script>
-      let login, password, message;
-      login = prompt("Login", "");
-      if (login == null || login == "") {
-        message = "Cancel";
-        alert(message);
-      } else if (login == "Admin") {
-        password = prompt("Password", "");
-      } else {
-        message = "Unknown user";
-        alert(message);
+    const login = prompt("Login", "");
+    if (login == "Admin") {
+      const password = prompt("Password", "");
+    
+      if (password == "I am the Boss") {
+        alert("Hello, Boss!");
       }
-      if (password == null || password == "") {
-        message = "Cancel";
-        alert(message);
-      } else if (password == "I am the Boss") {
-        message = "Hello, Boss!";
-        alert(message);
+        else if (password == null || password == "") {
+        alert("Cancel");
       } else {
-        message = "Invalid password";
-        alert(message);
-      }
+        alert("Invalid password");
+      } 
+    } else if (login == null || login == "") {
+      alert("Cancel");
+    } else {
+      alert("Unknown user");
+    }
     </script>
   </body>
 </html>

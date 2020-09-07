@@ -7,13 +7,17 @@
   </head>
   <body>
     <script>
-      
-      // 2.12task1
-      let i = 3;
-      while (i) {
-      alert( i-- ); // последнее значение выведется 1
+      let rangeFrom = 2;
+      let rangeTo = 10;
+      let i = rangeFrom;
+      let n = rangeTo;
+      next: 
+			for (i; i <= n; i++) {
+        for (let j = 2; j < i; j++) {
+        if (i % j == 0) continue next;
+        }
+      alert(i);
       }
-      
     </script>
   </body>
 </html>
