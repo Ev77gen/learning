@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="list-name">
+                <div class="list-name-mytodo">My To Do List</div>
+            </div>
+            <div
+                class="=list-input"
+                style="
+                    height: 50px;
+                    border-top-style: solid;
+                    border-top-width: 4px;
+                    padding-left: 35px;
+                    border-left-style: solid;
+                    border-left-width: 4px;
+                    border-bottom-style: solid;
+                    border-bottom-width: 4px;
+                    border-right-width: 4px;
+                    border-right-style: solid;
+                "
+            >
+            
+                <div class="input-newtodo"></div>
+                <input />
+            </div>
+            <div class="list-body">
+                <div class="body-check" style="width: 35px;">To Do List checkbox</div>
+                <div class="body-todo" style="width: 358px;">To Do List</div>
+                <div class="body-scroll" style="width: 10px;">To Do List scroll</div>
+            </div>
+            <div class="list-menu">
+								<div class="menu-buttons"></div>
+								<button>Save</button>
+								<button>Clear</button>
+								<button>Tips</button>
+            </div>
+        </div>
+        <style>
+            body {
+                margin-left: 750px;
+                margin-right: 750px;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+            .list-name {
+                display: flex;
+                background-color: rgb(129, 163, 238);
+                color: rgb(32, 9, 97);
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-bottom: 10px;
+                font-size: 25pt;
+                font-family: "Gill Sans", "Gill Sans MT", Calibri,
+                    "Trebuchet MS", sans-serif;
+                font-style: italic;
+            }
+            .list-input {
+                display: flex;
+            }
+            .input-newtodo {
+                display: flex;
+                flex: 0 0 30px;
+            }
+            .list-body {
+                display: flex;
+                flex: 1 1 0px;
+            }
+            .body-check {
+                display: flex;
+            }
+            .body-todo {
+                display: flex;
+
+                background-color: rgb(168, 166, 166);
+            }
+            .body-scroll {
+                display: flex;
+            }
+            .list-menu {
+                display: flex;
+                flex: 0 0 50px;
+            }
+            .menu-buttons {
+                display: flex;
+            }
+        </style>
+    </body>
+</html>
