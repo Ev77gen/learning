@@ -54,18 +54,13 @@
 }
 .body-todo {
     display: flex;
-    flex: 1 1 0;
+		flex: 1 1 0;
+		overflow: auto;
     background-color: rgb(168, 166, 166);
     background-image: url(https://i0.wp.com/churchofbangladesh.org/wp-content/uploads/2016/03/20-Seamless-Paper-Texture.jpg);
 }
-.body-scroll {
-    display: flex;
-    width: 10px;
-    border-left-width: 2px;
-    border-left-style: solid;
-    background-image: url(https://www.publicdomainpictures.net/pictures/210000/velka/gray-textured-pattern-background-1488751952b8R.jpg);
-    opacity: 0.3;
-}
+
+
 .list-menu {
     display: flex;
     flex: 0 0 50px;
