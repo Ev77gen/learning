@@ -10,35 +10,18 @@
             <div class="list-name">
                 <div class="list-name-mytodo">My To Do List</div>
             </div>
-            <div
-                class="=list-input"
-                style="
-                    height: 50px;
-                    border-top-style: solid;
-                    border-top-width: 4px;
-                    padding-left: 35px;
-                    border-left-style: solid;
-                    border-left-width: 4px;
-                    border-bottom-style: solid;
-                    border-bottom-width: 4px;
-                    border-right-width: 4px;
-                    border-right-style: solid;
-                "
-            >
-            
+            <div>
                 <div class="input-newtodo"></div>
-                <input />
             </div>
             <div class="list-body">
-                <div class="body-check" style="width: 35px;">To Do List checkbox</div>
-                <div class="body-todo" style="width: 358px;">To Do List</div>
-                <div class="body-scroll" style="width: 10px;">To Do List scroll</div>
+                <div class="body-check">To Do List checkbox</div>
+                <div class="body-todo">To Do List</div>
+                <div class="body-scroll">To Do List scroll</div>
             </div>
             <div class="list-menu">
-								<div class="menu-buttons"></div>
-								<button>Save</button>
-								<button>Clear</button>
-								<button>Tips</button>
+                <button>Save</button>
+                <button>Clear</button>
+                <button>Tips</button>
             </div>
         </div>
         <style>
@@ -63,12 +46,19 @@
                     "Trebuchet MS", sans-serif;
                 font-style: italic;
             }
-            .list-input {
-                display: flex;
-            }
+
             .input-newtodo {
                 display: flex;
-                flex: 0 0 30px;
+                height: 50px;
+                border-top-style: solid;
+                border-top-width: 4px;
+                padding-left: 35px;
+                border-left-style: solid;
+                border-left-width: 4px;
+                border-bottom-style: solid;
+                border-bottom-width: 4px;
+                border-right-width: 4px;
+                border-right-style: solid;
             }
             .list-body {
                 display: flex;
@@ -76,21 +66,22 @@
             }
             .body-check {
                 display: flex;
+                width: 35px;
             }
             .body-todo {
                 display: flex;
+                width: 358px;
 
                 background-color: rgb(168, 166, 166);
             }
             .body-scroll {
                 display: flex;
+                width: 10px;
             }
             .list-menu {
                 display: flex;
                 flex: 0 0 50px;
-            }
-            .menu-buttons {
-                display: flex;
+                justify-content: center;
             }
         </style>
     </body>
